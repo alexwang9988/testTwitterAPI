@@ -5,7 +5,6 @@ describe('testSearchTweet', function () {
     var Twitter = require('twitter');
     var chai = require('chai');
     var randomstring = require("randomstring");
-    var sleep = require('sleep');
 
     var client = new Twitter({
         consumer_key: 'DwyGCOtWUwVBfntKJsRjkbj4r',
