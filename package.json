@@ -4,7 +4,7 @@
   "description": "test twitter API app",
   "main": "index.js",
   "scripts": {
-    "test": "mocha mochatests/test*.js --reporter spec"
+    "test": "mocha mochatests/test*.js --recursive -R xunit mochatests/ > test-reports.xml"
   },
   "author": "",
   "license": "ISC",
@@ -14,5 +14,8 @@
     "randomstring": "^1.1.4",
     "sleep": "^3.0.1",
     "twitter": "^1.2.5"
+  },
+  "devDependencies": {
+    "jenkins-mocha": "^2.6.0"
   }
 }

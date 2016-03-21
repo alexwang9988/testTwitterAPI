@@ -37,8 +37,8 @@ describe('testSearchTweet', function () {
         setTimeout(done, 1000);
         client.get('users/lookup', {screen_name: 'alexwang'}, function(error, tweets, response){
             if(error) throw error;
-            console.log ('tweet:');
-            console.log(tweets);  // The favorites.
+            //console.log ('tweet:');
+            //console.log(tweets);  // The favorites.
             assert.isDefined(tweets.screen_name, 'good json should has screen_name defined');
             assert.equal (tweets.screen_name, 'alexwang', 'screen name is not the requested');
         });
