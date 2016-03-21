@@ -4,7 +4,7 @@
   "description": "test twitter API app",
   "main": "index.js",
   "scripts": {
-    "test": "mocha mochatests/test*.js --recursive -R xunit mochatests/ > test-reports.xml"
+    "test": "/usr/local/bin/mocha mochatests/test*.js --recursive -R xunit mochatests/ > test-reports.xml"
   },
   "author": "",
   "license": "ISC",
